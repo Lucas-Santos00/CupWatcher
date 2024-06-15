@@ -262,7 +262,7 @@ h3{
 }
 
 .allow{
-    background-image: url('/imgs/checkIcon.svg');
+    background-image: url('./imgs/checkIcon.svg');
     background-repeat: no-repeat;
     background-position: 0px 4px;
     text-align: left;
@@ -272,7 +272,7 @@ h3{
 }
 
 .notAllow{
-    background-image: url('/imgs/x.svg');
+    background-image: url('./imgs/x.svg');
     background-repeat: no-repeat;
     background-position: 0px 4px;
     text-align: left;
