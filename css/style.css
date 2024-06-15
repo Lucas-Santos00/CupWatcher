@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* DEFAULTS STYLES */
+
+body{
+    font-family: "Roboto Slab", serif;
+    background-color: #F5F5F5;
+    overflow-x: hidden;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.max-limit{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+/* ADJUST FOR LARGE SCREENS 4K+ */
+@media (min-height: 1080px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-around;
+    }
+}
+
+/* TOP BAR STYLES */
+.top-hader{
+    background-color: #FAFAFA;
+    filter: drop-shadow(0px -4px 5px #050505);
+    display: block;
+    padding: 38px 0;
+}
+
+.top-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container{
+    margin-left: 84px;
+    font-size: 2.7vw;
+    color: #11CD54;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container svg{
+    overflow: visible;
+    margin-right: 14px;
+    width: 5vw;
+    min-width: 28px;
+    max-width: 72px;
+}
+
+.sing-in-options{
+    margin-right: 84px;
+}
+
+.registe-btn{
+    color: #F5F5F5;
+    background-color: #11CD54;
+    font-size: 2.2vw;
+    padding: 12px 1.8vw;
+    margin-right: 2.9vw;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+.login-link{
+    font-size: 2.2vw;
+    color: #121212;
+}
+
+/* LIMIT FOR LARGE SCREENS */
+@media (min-width: 1440px) {
+    .logo-container{
+        font-size: 40px;
+    }
+    .registe-btn, .login-link{
+        font-size: 32px;
+    }
+    .registe-btn{
+        padding: 12px 24px;
+        margin-right: 42px;
+    }
+
+}
+
+/* MOBILE DEVICES TOP BAR STYLES */
+@media (max-width: 740px) {
+    .top-header-container{
+        justify-content: center;
+    }
+    .top-hader{
+        padding: 14px 0;
+    }
+    .logo-container{
+        font-size: 18px;
+        margin-left: 0;
+    }
+    .logo-container svg{
+        margin-right: 7px;
+    }
+    .sing-in-options{
+        display: none;
+        margin-right: 0;
+    }
+}
+
+/* HOME DOWNLOAD SECTION */
+.home-download{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding-top: 100px;
+    padding-bottom: 62px;
+}
+
+.home-download img{
+    width: 40.2vw;
+    max-width: 582px;
+}
+
+h1{
+    font-size: 2.7vw;
+    font-weight: 300;
+    width: 43.33vw;
+    min-width: 300px;
+    max-width: 624px;
+}
+
+.donwload-btn svg{
+    width: 2.9vw;
+    margin-right: 18px;
+    max-width: 42px;
+}
+
+.donwload-btn{
+    cursor: pointer;
+    color: #F5F5F5;
+    font-weight: 800;
+    font-size: 1.9vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2vw 28px;
+    border-radius: 22px;
+    background: rgb(52,183,99);
+    background: linear-gradient(55deg, rgba(52,183,99,1) 0%, rgba(10,208,81,1) 100%);
+}
+
+.system-options a{
+    color: #121212;
+    text-decoration: underline;
+}
+
+.system-options{
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+/* LIMIT FOR LARGE SCREENS */
+@media (min-width: 1440px){
+    h1{
+        font-size: 40px;
+    }
+    .donwload-btn{
+        font-size: 28px;
+        padding: 32px 28px;
+    }
+}
+
+/* MOBILE DEVICES HOME STYLES */
+@media (max-width: 740px){
+    body{
+        text-align: center;
+    }
+    .home-download{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 36px;
+    }
+    .home-download img{
+        width: 65vw;
+        min-width: 300px;
+    }
+    .donwload-btn svg{
+        width: 8.8vw;
+    }
+    .donwload-btn{
+        font-size: 4.9vw;
+        width: 65vw;
+        max-width: 372px;
+    }
+    h1{
+        margin: 36px 0;
+        width: 90vw;
+        text-align: center;
+        font-size: 6.7vw;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 740px) {
+    h1{
+        font-size: 32px;
+    }
+}
+
+/* CARDS SECTION */
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan-card{
+    margin-right: 38px;
+    text-align: center;
+    box-shadow: 1px 9px 38px -7px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 1px 9px 38px -7px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 9px 38px -7px rgba(0,0,0,0.25);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 0;
+    width: 27vw;
+    max-width: 400px;
+}
+.plan-card svg{
+    width: 6.94vw;
+    max-width: 100px;
+    min-width: 52px;
+}
+
+h3{
+    margin: 14px 0 16px 0;
+    font-size: 40px;
+}
+.plan-card li{
+    font-size: 24px;
+}
+
+#ouro-card{
+    margin: 0;
+}
+
+.allow{
+    background-image: url('/imgs/checkIcon.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    text-align: left;
+    background-size: 13px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.notAllow{
+    background-image: url('/imgs/x.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 4px;
+    text-align: left;
+    background-size: 13px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.price{
+    margin: 14px 0 8px 0;
+    font-weight: 300;
+    font-size: 2.22vw;
+}
+
+.adquirir-btn{
+    cursor: pointer;
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 32px;
+    background-color: #11CD54;
+    padding: 12px 48px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+footer{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #F5F5F5;
+    background-color: #11CD54;
+    padding: 14px 0;
+    margin-top: 48px;
+    font-size: 16px;
+}
+
+/* CARDS ADJUSSTS */
+@media(max-width: 1040px){
+    h3{
+        font-size: 22px;
+    }
+    .adquirir-btn{
+        padding: 12px 28px;
+        font-size: 18px;
+    }
+    .plan-card li{
+        font-size: 18px;
+    }
+}
+
+/* MOBILE DEVICES CARDS STYLES */
+@media (max-width: 740px){
+    .cards{
+        flex-direction: column;
+    }
+    .plan-card{
+        width: 74vw;
+        min-width: 300px;
+        padding: 38px 0;
+        margin-bottom: 34px;
+        margin-right: 0px;
+    }
+    h3{
+        font-size: 28px;
+        margin: 18px 0 12px 0;
+    }
+    .plan-card li{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 24px;
+        margin: 16px 0 12px 0;
+    }
+    .adquirir-btn{
+        padding: 6px 24px;
+        font-size: 28px;
+    }
+    footer{
+        padding: 8px 0;
+        font-size: 12px;
+        margin-top: 32px;
+    }
+}
+
+
+/* LIMIT FOR LARGE SCREENS */
+@media (min-width: 1440px){
+    .price{
+        font-size: 32px;
+    }
+    footer{
+        font-size: 28px;
+    }
+}
