@@ -1,5 +1,7 @@
 Tralho de desenvolvimetno prático - Univali.
 
+Acesse a página aqui: https://lucas-santos00.github.io/CupWatcher/
+
 Alunos:
 - Felipe
 - Magno
